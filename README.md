@@ -12,7 +12,7 @@ The NAND gate (as well as the NOR gate) has the property of functional completen
 
 ## Dependencies
 
-Make sure that the Python packages `mip`, `numpy`, `itertools` and `os` are installed. We suggest to install the [SCIP](https://scipopt.org/) suite of MILP optimization tools and leave the binary either in the current working directory. The `mip` package includes its own solver however it did not seem beefy enough for these purposes.
+Make sure that the Python packages `mip`, `numpy`, `itertools` and `os` are installed. We suggest to install the [SCIP](https://scipopt.org/) suite of MILP optimization tools and leave the binary in the current working directory. The `mip` package includes its own solver however it did not seem beefy enough for these purposes.
 
 ## How to use this package?
 
