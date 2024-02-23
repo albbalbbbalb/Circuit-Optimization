@@ -253,9 +253,8 @@ def print_connections(connections):
 if __name__ == "__main__":
 
     gates = "NAND NAND NAND NAND"
-    R = len(gates.split(' '))
     truth = '01010011'
-    filename = f'test'
+    filename = 'test'
     
     print('Simple test of solve_circuit_lp')
     print('The function we are computing is', truth)
