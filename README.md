@@ -42,6 +42,7 @@ where the order of the gates corresponds to their order from left to right in th
 
 ## Known limitations and TODOs
 
+- Rewrite everything so that it works with PySCIPOpt (somehow missed its existence)
 - To confidently determine that the minimum number of NAND gates for a particular Boolean function is $N$, the method of Muroga actually requires to verify that it cannot be done with $1,2,\dots, N-1$ NAND gates, so for now `solve_circuit_lp` should be called in a for loop to build up to $N$. It should be possible to bake a variable number of NAND gates into the formulation of the `.lp` file.
 - Currently only NAND and NOT gates are implemented. We'd like to extend with more gate options.
 - The method of Muroga assumes that the output of a gate can go into at most 1 input of another gate (for as many gates as needed), we'd like to relax that condition. For now, if you want to connect one output twice into a NAND gate, you have to just replace it with a NOT gate before running the solver, e.g., repeat the above example but with `gates="NOT NAND NAND NAND"`
